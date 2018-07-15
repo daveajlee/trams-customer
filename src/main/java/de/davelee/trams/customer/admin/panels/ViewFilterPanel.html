@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<wicket:panel>
+    <div id="viewArea" class="viewArea">
+
+        <!-- Form to filter last name -->
+        <form wicket:id="filterForm">
+            <table>
+                <tr>
+                    <td><p class="label"><label wicket:id="filterLabel"></label></p></td>
+                    <td><p><input class="field" wicket:id="filterField" id="filterField"/></p></td>
+                    <td><input type="submit" wicket:id="filterButton" class="button" value="Filter" /></td>
+                </tr>
+            </table>
+        </form>
+
+        <!-- table to display feedbacks -->
+        <table style="border-collapse: collapse; border: 1px solid black;width:80%;margin-left:10%;">
+            <tr>
+                <th style="border: 1px solid black;font-family:sans-serif;font-size:20px;font-weight:bold;width:40%;">Title</th>
+                <th style="border: 1px solid black;font-family:sans-serif;font-size:20px;font-weight:bold;width:40%;">First Name</th>
+                <th style="border: 1px solid black;font-family:sans-serif;font-size:20px;font-weight:bold;width:40%;">Surname</th>
+                <th style="border: 1px solid black;font-family:sans-serif;font-size:20px;font-weight:bold;width:40%;">E-mail Address</th>
+                <th style="border: 1px solid black;font-family:sans-serif;font-size:20px;font-weight:bold;width:40%;">Telephone Number</th>
+                <th style="border: 1px solid black;font-family:sans-serif;font-size:20px;font-weight:bold;width:40%;">Address</th>
+                <th style="border: 1px solid black;font-family:sans-serif;font-size:20px;font-weight:bold;width:40%;">Message</th>
+            </tr>
+            <tr wicket:id="customerFeedbackModelList">
+                <td style="border: 1px solid black;font-family:sans-serif;font-size:20px;text-align:center;" wicket:id="title"></td>
+                <td style="border: 1px solid black;font-family:sans-serif;font-size:20px;text-align:center;" wicket:id="firstName"></td>
+                <td style="border: 1px solid black;font-family:sans-serif;font-size:20px;text-align:center;" wicket:id="surname"></td>
+                <td style="border: 1px solid black;font-family:sans-serif;font-size:20px;text-align:center;" wicket:id="emailAddress"></td>
+                <td style="border: 1px solid black;font-family:sans-serif;font-size:20px;text-align:center;" wicket:id="telephoneNumber"></td>
+                <td style="border: 1px solid black;font-family:sans-serif;font-size:20px;text-align:center;" wicket:id="address"></td>
+                <td style="border: 1px solid black;font-family:sans-serif;font-size:20px;text-align:center;" wicket:id="message"></td>
+            </tr>
+        </table>
+    </div>
+</wicket:panel>
+</body>
+</html>

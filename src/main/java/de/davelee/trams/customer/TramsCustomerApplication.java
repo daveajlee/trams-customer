@@ -46,6 +46,10 @@ public class TramsCustomerApplication {
     @Value("#{'${operators.list}'.split(',')}")
     private static List<String> operators;
 
+    /**
+     * Main method to start the application.
+     * @param args a <code>String</code> array of arguments which are not presently used.
+     */
     public static void main ( String[] args ) {
         new SpringApplicationBuilder()
                 .sources(TramsCustomerApplication.class)
@@ -53,6 +57,10 @@ public class TramsCustomerApplication {
     }
 
     @Bean
+    /**
+     * Configure Swagger to display appropriate information.
+     * @return a <code>Docket</code> object containing the configured information.
+     */
     public Docket newsApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .groupName("operations")
@@ -62,12 +70,20 @@ public class TramsCustomerApplication {
                 .build();
     }
 
+    /**
+     * Only map urls starting with driver.
+     * @return a <code>Predicate</code> object containing the configuration of limited urls.
+     */
     private Predicate<String> paths() {
         return or (
                 regex("/customer.*")
         );
     }
 
+    /**
+     * Return an API Info object with the configured information for the Swagger UI.
+     * @return a <code>ApiInfo</code> object with the configured information for the Swagger UI.
+     */
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("TraMS Customer Rest API")

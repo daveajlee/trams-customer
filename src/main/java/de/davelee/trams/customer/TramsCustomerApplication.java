@@ -30,7 +30,7 @@ import static com.google.common.base.Predicates.or;
 import static springfox.documentation.builders.PathSelectors.regex;
 
 /**
- * This class represents the Spring Boot application for TraMS Business Management.
+ * This class represents the Spring Boot application for TraMS Customer Management.
  * @author Dave Lee
  */
 @Configuration

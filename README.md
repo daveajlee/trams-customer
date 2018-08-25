@@ -7,7 +7,7 @@ This microservice for the TraMS platform stores customer feedback through REST a
 2. Create an executable jar using mvn clean install.
 3. Run the jar (for example in production mode): java -Dspring.profiles.active=production -jar trams-customer.jar
 
-**How to use the integrated Admin Client and Swagger **
+**How to use the integrated Admin Client and Swagger**
 
 The microservice comes with an integrated admin client which allows you to view feedback which has already been submitted. This admin interface is available at https://your-domain/trams-customer/admin/ The initial username and password is admin/admin.
 

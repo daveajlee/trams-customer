@@ -55,7 +55,7 @@ public class WicketSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configureGlobal(final AuthenticationManagerBuilder auth) throws Exception {
         auth
                 .inMemoryAuthentication()
-                .withUser("admin").password("admin").authorities("USER", "ADMIN");
+                .withUser("admin").password("{noop}admin").authorities("USER", "ADMIN");
     }
 
 }

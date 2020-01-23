@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM openjdk:13-jdk-alpine
 VOLUME /tmp
 ADD target/trams-customer.jar trams-customer.jar
 ENV JAVA_OPTS=""

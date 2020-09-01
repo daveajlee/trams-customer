@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 public class TramsCustomerServerApplicationTest {
 
     @LocalServerPort
-    int port;
+    private int port;
 
     @Before
     /**

@@ -4,6 +4,8 @@ import org.apache.wicket.util.tester.WicketTester;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 /**
  * Test the welcome page and ensure that it can be displayed successfully.
  * Use test wicket class to prevent Spring Security problems.
@@ -27,6 +29,7 @@ public class CustomerWelcomePageTest {
      * Expected result: all assertions are fulfilled.
      */
     public void homepageRendersSuccessfully(){
+        assertNotNull(tester);
         //start and render the test page
         tester.startPage(CustomerWelcomePage.class);
         //assert rendered page class

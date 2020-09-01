@@ -1,7 +1,6 @@
 package de.davelee.trams.customer.rest.controllers;
 
 import de.davelee.trams.customer.api.CustomerFeedbackModel;
-import de.davelee.trams.customer.data.CustomerFeedback;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;

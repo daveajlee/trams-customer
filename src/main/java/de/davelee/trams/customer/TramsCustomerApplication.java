@@ -1,19 +1,9 @@
 package de.davelee.trams.customer;
 
 import com.google.common.base.Predicate;
-import de.davelee.trams.customer.admin.pages.CustomerLoginPage;
-import de.davelee.trams.customer.admin.pages.CustomerWelcomePage;
-import org.apache.wicket.Page;
-import org.apache.wicket.protocol.http.WebApplication;
-import org.apache.wicket.spring.injection.annot.SpringBean;
-import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-//import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

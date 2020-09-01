@@ -10,6 +10,7 @@ import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import static com.jayway.restassured.RestAssured.when;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes=TramsCustomerApplication.class, webEnvironment= SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -36,10 +37,10 @@ public class TramsCustomerServerApplicationTest {
      * Expected result: 200 status code OK.
      */
     public void testSwagger() {
-        when().
+        assertNotNull(when().
                 get("/swagger-ui.html").
                 then().
-                statusCode(HttpStatus.SC_OK);
+                statusCode(HttpStatus.SC_OK));
     }
 
 }

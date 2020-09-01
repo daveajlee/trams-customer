@@ -49,6 +49,22 @@ public class CustomerFeedback implements java.io.Serializable {
     private Map<String,String> extraInfos;
 
     /**
+     * Return the id of the customer.
+     * @return a <code>long</code> containing the id.
+     */
+    public long getId() {
+        return id;
+    }
+
+    /**
+     * Set the id of the customer.
+     * @return a <code>long</code> containing the id.
+     */
+    public void setId(final long id) {
+        this.id = id;
+    }
+
+    /**
      * Return the title of the customer as a String.
      * @return a <code>String</code> containing the title of the customer.
      */

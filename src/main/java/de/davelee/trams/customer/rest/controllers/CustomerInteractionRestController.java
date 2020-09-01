@@ -12,7 +12,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletResponse;
 import java.util.regex.Pattern;
 
 @RestController
@@ -65,11 +64,8 @@ public class CustomerInteractionRestController {
             return false;
         } else if ( isFieldEmpty(customerFeedbackModel.getTelephoneNumber()) ) {
             return false;
-        } else if (!Pattern.matches(".*@.*[.]?.*$", customerFeedbackModel.getEmailAddress())) {
-            return false;
-        } else {
-            return true;
         }
+        return (Pattern.matches(".*@.*[.]?.*$", customerFeedbackModel.getEmailAddress()));
     }
 
     /**

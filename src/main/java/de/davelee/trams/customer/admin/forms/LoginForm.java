@@ -3,7 +3,11 @@ package de.davelee.trams.customer.admin.forms;
 import de.davelee.trams.customer.admin.pages.CustomerWelcomePage;
 import de.davelee.trams.customer.config.WicketPropertyConfiguration;
 import org.apache.wicket.markup.html.basic.Label;
-import org.apache.wicket.markup.html.form.*;
+import org.apache.wicket.markup.html.form.Form;
+import org.apache.wicket.markup.html.form.DropDownChoice;
+import org.apache.wicket.markup.html.form.TextField;
+import org.apache.wicket.markup.html.form.PasswordTextField;
+import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.panel.FeedbackPanel;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;
@@ -18,7 +22,6 @@ import java.util.List;
 public class LoginForm extends Form {
 
     private List<String> operators = WicketPropertyConfiguration.getOperators();
-    private String selectedOperator = operators.get(0);
 
     private DropDownChoice<String> operatorSelect;
     private TextField<String> usernameField;

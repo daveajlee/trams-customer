@@ -1,4 +1,7 @@
 # trams-customer
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ccb9bcbaafe64c7e9d37cacbf3bba7eb)](https://app.codacy.com/manual/dave_33/trams-customer?utm_source=github.com&utm_medium=referral&utm_content=daveajlee/trams-customer&utm_campaign=Badge_Grade_Dashboard)
+
 This microservice for the TraMS platform stores customer feedback through REST and displays it to authorised individuals through a web client.
 
 ## How to use

@@ -22,6 +22,7 @@ import java.util.List;
 public class LoginForm extends Form {
 
     private List<String> operators = WicketPropertyConfiguration.getOperators();
+    private String selectedOperator = operators.get(0);
 
     private DropDownChoice<String> operatorSelect;
     private TextField<String> usernameField;

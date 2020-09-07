@@ -17,6 +17,7 @@ import java.util.List;
  */
 public class ViewFilterPanel extends Panel {
 
+    private List<CustomerFeedbackModel> customerFeedbackModelList;
     private ListView<CustomerFeedbackModel> customerFeedbackModelListView;
 
     /**
@@ -26,7 +27,7 @@ public class ViewFilterPanel extends Panel {
     public ViewFilterPanel(final String id) {
         super(id);
 
-        List<CustomerFeedbackModel> customerFeedbackModelList = WicketServiceCaller.getAllCustomerFeedbackModels();
+        customerFeedbackModelList = WicketServiceCaller.getAllCustomerFeedbackModels();
 
         customerFeedbackModelListView = new ListView<CustomerFeedbackModel>("customerFeedbackModelList", new PropertyModel<>(this, "customerFeedbackModelList")) {
 

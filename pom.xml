@@ -17,6 +17,8 @@
 
 	<properties>
 		<wicket.version>8.0.0</wicket.version>
+		<swagger.version>2.9.2</swagger.version>
+		<eureka.version>2.2.1.RELEASE</eureka.version>
 	</properties>
 
 	<dependencies>
